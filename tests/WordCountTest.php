@@ -145,6 +145,20 @@
 		$this->assertEquals('0', $result);
 		}
 
+		function test_aSentenceWithPunctuation()
+		{
+		//Arrange
+		$test_RepeatCounter = new RepeatCounter;
+		$wordToCount = 'That';
+		$sentence = 'That sentence, has #$%^ that punctuation thing going on.';
+
+		//Act
+		$result = $test_RepeatCounter->CountRepeats($wordToCount, $sentence);
+
+		//Assert
+		$this->assertEquals('2', $result);
+		}
+
 	}
 
 ?>

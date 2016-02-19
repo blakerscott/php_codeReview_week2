@@ -5,7 +5,7 @@
 	class WordCounterTest extends PHPUnit_Framework_TestCase
 	{
 
-		function test_countOneLetterLower()
+		function test_oneLetterLower()
 		{
 		//Arrange
 		$test_WordCounter = new WordCounter;
@@ -19,7 +19,7 @@
 		$this->assertEquals('1', $result);
 		}
 
-		function test_countOneletterUpper()
+		function test_oneletterUpper()
 		{
 		//Arrange
 		$test_WordCounter = new WordCounter;
@@ -33,12 +33,26 @@
 		$this->assertEquals('1', $result);
 		}
 
-		function test_countOneWordTwoLetterAllLowercase()
+		function test_oneWordTwoLetterAllLowercase()
 		{
 		//Arrange
 		$test_WordCounter = new WordCounter;
 		$wordToCount = 'in';
 		$sentence = 'in';
+
+		//Act
+		$result = $test_WordCounter->countWordFunction($wordToCount, $sentence);
+
+		//Assert
+		$this->assertEquals('1', $result);
+		}
+
+		function test_oneWordTwoLetterAllUppercase()
+		{
+		//Arrange
+		$test_WordCounter = new WordCounter;
+		$wordToCount = 'IN';
+		$sentence = 'IN';
 
 		//Act
 		$result = $test_WordCounter->countWordFunction($wordToCount, $sentence);

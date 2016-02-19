@@ -142,7 +142,7 @@
 		$result = $test_RepeatCounter->CountRepeats($wordToCount, $sentence);
 
 		//Assert
-		$this->assertEquals('No matches', $result);
+		$this->assertEquals('0', $result);
 		}
 
 	}

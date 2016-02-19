@@ -2,11 +2,14 @@
 	 class WordCounter
 		{
 
-		 function countWordFunction(){
-
-
+		 function countWordFunction($wordToCount, $sentence){
+			 if ($wordToCount == $sentence)
+			 {
+			 		$result = "1";
+	 		 }
+			 return $result;
 			}
 
 		}
-	
+
  ?>

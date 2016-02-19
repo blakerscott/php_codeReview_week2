@@ -18,3 +18,5 @@
 8.  Test to see if code will output a "2" if the comparison input match contains 2 matches and other words. Example: wordToCount = 'It'; $sentence = 'It is so funny that It hurts';
 
 9.  Test to see if code will output a "3" if the comparison input match contains 3 matches that have different case configurations, and other words. Example: wordToCount = 'That'; $sentence = 'That is great tHAt is funny that is cool THAT is dumb thAT rules';
+
+10. Test to see if code will output "No matches" if there are not any matches.

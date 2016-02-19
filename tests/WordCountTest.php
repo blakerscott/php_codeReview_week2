@@ -131,6 +131,20 @@
 		$this->assertEquals('5', $result);
 		}
 
+		function test_aSentenceThatHasNoMatches()
+		{
+		//Arrange
+		$test_RepeatCounter = new RepeatCounter;
+		$wordToCount = 'That';
+		$sentence = 'This sentence does not have any matches';
+
+		//Act
+		$result = $test_RepeatCounter->CountRepeats($wordToCount, $sentence);
+
+		//Assert
+		$this->assertEquals('No matches', $result);
+		}
+
 	}
 
 ?>

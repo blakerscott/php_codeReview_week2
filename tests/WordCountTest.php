@@ -1,6 +1,6 @@
 <?php
 
-	require_once 'src/Class.php';
+	require_once 'src/WordCounter.php';
 
 	class WordCounterTest extends PHPUnit_Framework_TestCase
 	{

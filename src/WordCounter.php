@@ -3,10 +3,10 @@
 		{
 
 		 function countWordFunction(){
-			 if 
+
 
 			}
 
 		}
-	}
+	
  ?>

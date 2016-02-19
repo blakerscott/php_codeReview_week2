@@ -2,14 +2,18 @@
 	 class WordCounter
 		{
 
-		 function countWordFunction($wordToCount, $sentence){
-			 if ($wordToCount == $sentence)
-			 {
-			 		$result = "1";
-	 		 }
-			 return $result;
-			}
+		 function countWordFunction($wordToCount, $sentence)
+		 {
+			 $result = 0;
+			 $sentenceArray = explode(" ", $sentence);
+			 foreach ($sentenceArray as $word) {
+				 if ($word == $wordToCount)
+				 {
+				 		$result += 1;
+		 		 }
 
+				}
+				return $result;
 		}
-
+	}
  ?>

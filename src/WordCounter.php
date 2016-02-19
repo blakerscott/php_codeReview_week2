@@ -5,7 +5,7 @@
 		 function countWordFunction($wordToCount, $sentence)
 		 {
 			 $result = 0;
-			 $sentenceArray = explode(" ", $sentence);
+			 $sentenceArray = explode(strtolower(" ", $sentence));
 			 foreach ($sentenceArray as $word) {
 				 if ($word == $wordToCount)
 				 {

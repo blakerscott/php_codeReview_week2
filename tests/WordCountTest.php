@@ -117,6 +117,20 @@
 		$this->assertEquals('2', $result);
 		}
 
+		function test_aSentenceThatContainsMatchesWithMultipleCaseConfiguations()
+		{
+		//Arrange
+		$test_WordCounter = new WordCounter;
+		$wordToCount = 'That';
+		$sentence = 'That is great tHAt is funny that is cool THAT is dumb thAT rules';
+
+		//Act
+		$result = $test_WordCounter->countWordFunction($wordToCount, $sentence);
+
+		//Assert
+		$this->assertEquals('5', $result);
+		}
+
 	}
 
 ?>

@@ -103,6 +103,20 @@
 		$this->assertEquals('1', $result);
 		}
 
+		function test_aSentenceThatHasMultipleWordsAndTwoMatches()
+		{
+		//Arrange
+		$test_WordCounter = new WordCounter;
+		$wordToCount = 'It';
+		$sentence = 'It is so funny that It hurts';
+
+		//Act
+		$result = $test_WordCounter->countWordFunction($wordToCount, $sentence);
+
+		//Assert
+		$this->assertEquals('2', $result);
+		}
+
 	}
 
 ?>

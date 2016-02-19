@@ -11,9 +11,9 @@
 	return $app['twig']->render('home.html.twig');
 	});
 
-	$app->post('/result', function() use ($app) {
+	$app->get('/result', function() use ($app) {
 	  $new_counter = new RepeatCounter;
-		$new_input = $new_counter->CountRepeats($_POST['word'],$_POST['sentence']);
+		$new_input = $new_counter->CountRepeats($_GET['word'],$_GET['sentence']);
 	  return $app['twig']->render('result.html.twig', array('result' => $new_input));
 	});
 

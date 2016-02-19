@@ -19,7 +19,7 @@
 		$this->assertEquals('1', $result);
 		}
 
-		function test_countOneWordUpper()
+		function test_countOneletterUpper()
 		{
 		//Arrange
 		$test_WordCounter = new WordCounter;
@@ -32,6 +32,21 @@
 		//Assert
 		$this->assertEquals('1', $result);
 		}
+
+		function test_countOneWordTwoLetterAllLowercase()
+		{
+		//Arrange
+		$test_WordCounter = new WordCounter;
+		$wordToCount = 'in';
+		$sentence = 'in';
+
+		//Act
+		$result = $test_WordCounter->countWordFunction($wordToCount, $sentence);
+
+		//Assert
+		$this->assertEquals('1', $result);
+		}
+
 	}
 
 ?>

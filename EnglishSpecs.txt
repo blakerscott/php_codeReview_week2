@@ -11,10 +11,10 @@
 
 5.  Test to see if code will output a "1" for a two letter input with both upper and lowercase letter, and a matching comparison input. $wordToCount = 'In'; $sentence = 'In';
 
-6.  Test to see if code will output a "2" for both words of the comparison input match. Example: wordToCount = 'It'; $sentence = 'It It';
+6.  Test to see if code will output a "2" when both words of the comparison input match. Example: wordToCount = 'It'; $sentence = 'It It';
 
 7.  Test to see if code will output a "1" when only one word matches a two word comparison input. Example:  $wordToCount = 'It'; $sentence = 'It is';
 
 8.  Test to see if code will output a "2" if the comparison input match contains 2 matches and other words. Example: wordToCount = 'It'; $sentence = 'It is so funny that It hurts';
 
-9.  Test to see if code will output a "3" if the comparison input match contains 3 matches that have different case configurations, and other words. Example: wordToCount = 'it'; $sentence = 'IT is so funny that it hurts me to say iT';
+9.  Test to see if code will output a "3" if the comparison input match contains 3 matches that have different case configurations, and other words. Example: wordToCount = 'That'; $sentence = 'That is great tHAt is funny that is cool THAT is dumb thAT rules';

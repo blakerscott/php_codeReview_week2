@@ -75,6 +75,20 @@
 		$this->assertEquals('1', $result);
 		}
 
+		function test_aSentenceThatIsTwoMatches()
+		{
+		//Arrange
+		$test_WordCounter = new WordCounter;
+		$wordToCount = 'In';
+		$sentence = 'In In';
+
+		//Act
+		$result = $test_WordCounter->countWordFunction($wordToCount, $sentence);
+
+		//Assert
+		$this->assertEquals('2', $result);
+		}
+
 	}
 
 ?>

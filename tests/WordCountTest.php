@@ -61,6 +61,20 @@
 		$this->assertEquals('1', $result);
 		}
 
+		function test_oneWordTwoLetterMixedCase()
+		{
+		//Arrange
+		$test_WordCounter = new WordCounter;
+		$wordToCount = 'In';
+		$sentence = 'In';
+
+		//Act
+		$result = $test_WordCounter->countWordFunction($wordToCount, $sentence);
+
+		//Assert
+		$this->assertEquals('1', $result);
+		}
+
 	}
 
 ?>

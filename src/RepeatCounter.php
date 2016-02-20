@@ -5,8 +5,8 @@
 		 function CountRepeats($wordToCount, $sentence)
 		 {
 			 $result = 0;
-			 $lowerCaseWordToCount = strtolower($wordToCount);
 			 $lowerCaseSentence = strtolower($sentence);
+			 $lowerCaseWordToCount = strtolower($wordToCount);
 			 $sentenceArray = explode(" ", $lowerCaseSentence);
 			 foreach ($sentenceArray as $word) {
 				 if ($word == $lowerCaseWordToCount)

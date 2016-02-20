@@ -1,4 +1,4 @@
-# Address Book 1.0
+# Word Counter 1.0
 
 #### A simple application counting the occurrence of a word.
 
@@ -26,7 +26,7 @@ Example:
 
 ## Technologies Used
 
-Silex,Twig,PHP,HTML,Composer
+Silex, Twig, PHP, HTML, Composer, PHPUnit
 
 ### License
 

@@ -108,7 +108,7 @@
 		//Arrange
 		$test_RepeatCounter = new RepeatCounter;
 		$wordToCount = 'It';
-		$sentence = 'It is so funny that It hurts';
+		$sentence = 'It is It';
 
 		//Act
 		$result = $test_RepeatCounter->CountRepeats($wordToCount, $sentence);
@@ -122,13 +122,13 @@
 		//Arrange
 		$test_RepeatCounter = new RepeatCounter;
 		$wordToCount = 'That';
-		$sentence = 'That is great tHAt is funny that is cool THAT is dumb thAT rules';
+		$sentence = 'THAT is great tHAt is funny that is cool';
 
 		//Act
 		$result = $test_RepeatCounter->CountRepeats($wordToCount, $sentence);
 
 		//Assert
-		$this->assertEquals('5', $result);
+		$this->assertEquals('3', $result);
 		}
 
 		function test_aSentenceThatHasNoMatches()
